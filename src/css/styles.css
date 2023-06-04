@@ -1,0 +1,78 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slim-select/2.5.0/slimselect.css');
+
+body {
+  font-family: sans-serif;
+  padding: 100px;
+  background-color: rgb(255, 255, 255);
+}
+
+.cat-img {
+  object-fit: cover;
+  overflow: hidden;
+  max-width: 500px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px -1px rgba(17, 17, 45, 1),
+    33px 33px 0px 1px rgb(160, 160, 160), -22px 98px 0px 1px rgb(180, 180, 180),
+    66px 144px 0px 1px rgb(210, 210, 210), 122px 44px 0px 1px rgb(190, 190, 190),
+    166px 88px 0px 1px rgb(233, 233, 233);
+}
+
+.cat-info {
+  display: inline-flex;
+  align-items: center;
+}
+.presentation {
+  margin-left: 22px;
+  text-shadow: -1px -1px 0px rgba(255, 255, 255, 1);
+  max-width: 500px;
+}
+.name {
+  font-size: 33px;
+  font-weight: 700;
+  color: #393939;
+}
+.description {
+  font-size: 12px;
+  font-weight: 100;
+}
+.temperament {
+  font-size: 14px;
+  font-weight: 100;
+  color: #393939;
+}
+
+.breed-select {
+  max-width: 366px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.loader {
+  color: transparent;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -333px;
+  margin-left: -333px;
+  width: 666px;
+  height: 666px;
+  background: #a6a6a6;
+  display: inline-block;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: animloader 1s ease-in infinite;
+}
+
+@keyframes animloader {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.invisible {
+  display: none;
+}
